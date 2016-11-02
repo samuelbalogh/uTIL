@@ -28,13 +28,18 @@
 
 ### Misc
 
+- Run last command as root
+
+        $ sudo !!
+
 - Go to home dir 
 
         $ cd
 
-- Edit aliases, path and other variables
+- Edit aliases, PATH and other variables
 
         $ sudo nano .bash_profile
+        $ source .bash_profile
 
 ### Python
 
