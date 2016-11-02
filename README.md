@@ -8,6 +8,10 @@
 - Flush DNS on macOS
 
         $ sudo dscacheutil -flushcache
+        
+- Edit hosts file (to manually override DNS servers)
+
+        $ sudo nano ./etc/hosts
 
 - Start a simple HTTP server with Python
 
