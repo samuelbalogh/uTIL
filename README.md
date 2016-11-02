@@ -1,4 +1,7 @@
 # uTIL
+** Micro TILs and utilities **
+
+---
 
 ## Terminal commands
 
@@ -6,9 +9,7 @@
 
 `$ sudo dscacheutil -flushcache`
 
-
 - Start a simple HTTP server with Python
-
 `$ python -m SimpleHTTPServer`
 
 - List applications by memory usage
