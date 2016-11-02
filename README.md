@@ -1,5 +1,5 @@
 # uTIL
-** Micro TILs and utilities **
+**Micro TILs and utilities**
 
 ---
 
@@ -7,23 +7,29 @@
 
 - Flush DNS on macOS
 
-`$ sudo dscacheutil -flushcache`
+        $ sudo dscacheutil -flushcache
 
 - Start a simple HTTP server with Python
-`$ python -m SimpleHTTPServer`
+
+        $ python -m SimpleHTTPServer
 
 - List applications by memory usage
 
-`$ top -o MEM`
+        $ top -o MEM
 
 - Go to home dir 
 
-`$ cd`
+        $ cd
 
 - Edit aliases, path and other variables
 
-`$ sudo nano .bash_profile`
+        $ sudo nano .bash_profile
 
 - Open Python script in interactive mode (runs script and stays in the interpreter, preserving namespace)
 
-`$ python -i [filename]`
+        $ python -i [filename]
+        
+- Preview Github Readme.md file locally 
+    - Install [grip](https://github.com/joeyespo/grip): `$ pip install grip`
+    - In the folder of the repo, type `$ grip`
+    - Visit `http://localhost:6419/` in your browser
