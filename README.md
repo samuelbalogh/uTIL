@@ -5,6 +5,8 @@
 
 ## Terminal commands
 
+### Network
+
 - Flush DNS on macOS
 
         $ sudo dscacheutil -flushcache
@@ -17,9 +19,14 @@
 
         $ python -m SimpleHTTPServer
 
+
+### Troubleshooting
+
 - List applications by memory usage
 
         $ top -o MEM
+
+### Misc
 
 - Go to home dir 
 
@@ -29,11 +36,15 @@
 
         $ sudo nano .bash_profile
 
+### Python
+
 - Open Python script in interactive mode (runs script and stays in the interpreter, preserving namespace)
 
         $ python -i [filename]
-        
-- Preview Github Readme.md file locally 
+
+### Github
+
+- Preview Github Readme.md file locally
     - Install [grip](https://github.com/joeyespo/grip): `$ pip install grip`
     - In the folder of the repo, type `$ grip`
     - Visit `http://localhost:6419/` in your browser
