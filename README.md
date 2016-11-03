@@ -90,13 +90,13 @@
 ##### Shortcuts
 
 - Set short aliases to frequently used commands, e.g. `git chdev` = `git checkout develop`
-```
-git config --global alias.chdev 'checkout develop'
-```
+
+        git config --global alias.chdev 'checkout develop'
+
 - List existing aliases
-```
-git config --global -l
-```
+
+        git config --global -l
+
 
 ##### Preview Github Readme.md file locally
   - Install [grip](https://github.com/joeyespo/grip): `$ pip install grip`
@@ -106,17 +106,18 @@ git config --global -l
 ##### Generate an SSH Public Key
 
 1. Check if an SSH key pair exists already
-  ```
-  $ cd ~/.ssh
-  $ ls
-  ```
+
+        $ cd ~/.ssh
+        $ ls
+
   If `<key_name>` and `<key_name>.pub` are there, skip to step 3.
+
 2. If no key found, generate one
-  ```
-  $ ssh-keygen
-  ```
+
+        $ ssh-keygen
+
 3. Check the contents of the public (`.pub`) key
-  ```
-  $ cat <key_name>.pub
-  ```
+
+        $ cat <key_name>.pub
+
 4. Copy the all of the contents of the public key, go to [Github > Settings > SSH and GPG keys](https://github.com/settings/keys), click 'New SSH key' and paste the contents of the public key.
