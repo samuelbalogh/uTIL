@@ -49,7 +49,7 @@
 
 ## Git (CLI)
 
-##### Workflow
+#### Workflow
 
 *This works for basic setups, however, the recommended workflow should always be discussed with the team*
 
@@ -61,7 +61,7 @@
 6. Create pull request  
 
 
-###### Get info
+##### Get info
 
 `git branch` shows existing branches & which branch we are working on  
 `git branch -a` shows remote branches too  
@@ -70,24 +70,24 @@
 `git blame <file>` shows who edited each line  
 `git show HEAD` shows the last commit (author, date, message, diff)
 
-###### Move around
+##### Move around
 
 `git checkout <branch>` move to another branch  
 `git checkout -b <branch>` move to another branch, and if it doesn't exist, create a new one
 
-###### Add things
+##### Add things
 
 `git add <file or path>` add a file or path to be included in the next commit (wildcards work for paths too, e.g. `git add src/scripts/*`)  
 `git add .` or `git add -A` or `git add --all` add everything  
 `git reset HEAD <file>` revert changes in a file to last commit
 
-###### Clean up
+##### Clean up
 
 `git branch -D <branch name>` delete branch
 
-##### Extras & Extensions
+#### Extras & Extensions
 
-###### Shortcuts
+##### Shortcuts
 
 - Set short aliases to frequently used commands, e.g. `git chdev` = `git checkout develop`
 ```
@@ -98,12 +98,12 @@ git config --global alias.chdev 'checkout develop'
 git config --global -l
 ```
 
-###### Preview Github Readme.md file locally
+##### Preview Github Readme.md file locally
   - Install [grip](https://github.com/joeyespo/grip): `$ pip install grip`
   - In the folder of the repo, type `$ grip`
   - Visit `http://localhost:6419/` in your browser
 
-###### Generate an SSH Public Key
+##### Generate an SSH Public Key
 
 1. Check if an SSH key pair exists already
   ```
