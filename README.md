@@ -1,13 +1,13 @@
 # uTIL
-**Micro TILs and utilities**
+**Micro TILs and utilities for macOS**
 
----
+--- 
 
 ## Terminal commands
 
 ### Network
 
-- Flush DNS on macOS
+- Flush DNS
 
         $ sudo dscacheutil -flushcache
         
@@ -25,6 +25,10 @@
 - List applications by memory usage
 
         $ top -o MEM
+        
+- List disk I/O and CPU load
+
+        $ iostat
 
 ### Misc
 
