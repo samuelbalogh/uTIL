@@ -67,36 +67,67 @@
 
 ##### Get info
 
-`git branch` shows existing branches & which branch we are working on  
-`git branch -a` shows remote branches too  
-`git s` or `git status` shows files changed since last commit & whether they are included in the next commit  
-`git diff` shows the changes in each file compared to the last commit  
-`git blame <file>` shows who edited each line  
-`git show HEAD` shows the last commit (author, date, message, diff)
+`git branch`  
+shows existing branches & which branch we are working on
+
+`git branch -a`  
+shows remote branches too  
+
+`git s` or `git status`  
+shows files changed since last commit & whether they are included in the next commit  
+
+`git diff`  
+shows the changes in each file compared to the last commit  
+
+`git blame <file>`  
+shows who edited each line  
+
+`git show HEAD`  
+shows the last commit (author, date, message, diff)
 
 ##### Move around
 
-`git checkout <branch>` move to another branch  
-`git checkout -b <branch>` move to another branch, and if it doesn't exist, create a new one
+`git checkout <branch>`  
+move to another branch  
+
+`git checkout -b <branch>`  
+move to another branch, and if it doesn't exist, create a new one
 
 ##### Add things
 
-`git add <file or path>` add a file or path to be included in the next commit (wildcards work for paths too, e.g. `git add src/scripts/*`)  
-`git add .` or `git add -A` or `git add --all` add everything  
-`git reset HEAD <file>` revert changes in a file to last commit
+`git add <file or path>`  
+add a file or path to be included in the next commit (wildcards work for paths too, e.g. `git add src/scripts/*`)  
+
+`git add .` or `git add -A` or `git add --all`  
+add everything  
+
+`git reset HEAD <file>`  
+revert changes in a file to last commit
 
 ##### Clean up
 
-`git branch -D <branch name>` delete branch
+`git branch -D <branch name>`  
+delete branch
 
 ##### Stash (cut & paste)
 
-`git stash` remove all changes since last commit & put them on a clipboard (useful e.g. if you want to merge master before a PR)  
-`git stash show -p` view the contents of the stash (looks like a git diff)  
-`git stash pop` apply the stashed changes again  
-`git diff stash@{0}^1 stash@{0} -- <filename> | git apply` only apply the changes from one specific file from the stash  
-`git stash list` show the contents of the stash (pop pops the latest, `stash@{0}`)  
-`git stash clear` empty the stash
+`git stash`  
+remove all changes since last commit & put them on a clipboard (useful e.g. if you want to merge master before a PR)  
+
+`git stash show -p`  
+view the contents of the stash (looks like a git diff)  
+
+`git stash pop`  
+apply the stashed changes again  
+
+`git diff stash@{0}^1 stash@{0} -- <filename> | git apply`  
+only apply the changes from one specific file from the stash  
+
+`git stash list`  
+show the contents of the stash (pop pops the latest, `stash@{0}`)  
+
+`git stash clear`  
+empty the stash
 
 #### Extras & Extensions
 
