@@ -89,6 +89,15 @@
 
 `git branch -D <branch name>` delete branch
 
+##### Stash (cut & paste)
+
+`git stash` remove all changes since last commit & put them on a clipboard (useful e.g. if you want to merge master before a PR)  
+`git stash show -p` view the contents of the stash (looks like a git diff)  
+`git stash pop` apply the stashed changes again  
+`git diff stash@{0}^1 stash@{0} -- <filename> | git apply` only apply the changes from one specific file from the stash  
+`git stash list` show the contents of the stash (pop pops the latest, `stash@{0}`)  
+`git stash clear` empty the stash
+
 #### Extras & Extensions
 
 ##### Shortcuts
