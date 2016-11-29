@@ -158,7 +158,7 @@ empty the stash
 
 2. If no key found, generate one
 
-        $ ssh-keygen
+        $ ssh-keygen -t rsa -C "your.email.used.on.github@example.com"
 
 3. Check the contents of the public (`.pub`) key
 
