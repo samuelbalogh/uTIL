@@ -14,6 +14,10 @@
 - Edit hosts file (to manually override DNS servers)
 
         $ sudo nano ./etc/hosts
+        
+- Set command line aliases
+
+        $ alias wikisurf="python ~/WikiSurf/WikiSurfPy.py"
 
 - Start a simple HTTP server with Python
 
