@@ -15,10 +15,6 @@
 
         $ sudo nano ./etc/hosts
         
-- Set command line aliases
-
-        $ alias wikisurf="python ~/WikiSurf/WikiSurfPy.py"
-
 - Start a simple HTTP server with Python
 
         $ python -m SimpleHTTPServer
@@ -48,6 +44,11 @@
 
         $ sudo nano .bash_profile
         $ source .bash_profile
+        
+- Set aliases directly from the command line
+
+        $ alias wikisurf="python ~/WikiSurf/WikiSurfPy.py"
+
 
 ### Python
 
