@@ -19,6 +19,9 @@
 
         $ python -m SimpleHTTPServer
 
+- Run MongoDB as a backround service
+
+        $ mongod --fork --logpath /var/log/mongodb.log
 
 ### Troubleshooting
 
