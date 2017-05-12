@@ -7,57 +7,46 @@
 
 ### Network
 
-- Flush DNS
-
-        $ sudo dscacheutil -flushcache
+Flush DNS  
+`sudo dscacheutil -flushcache`
         
-- Edit hosts file (to manually override DNS servers)
-
-        $ sudo nano ./etc/hosts
+Edit hosts file (to manually override DNS servers)  
+`sudo nano ./etc/hosts`
         
-- Start a simple HTTP server with Python
+Start a simple HTTP server with Python   
+`python -m SimpleHTTPServer`
 
-        $ python -m SimpleHTTPServer
-
-- Run MongoDB as a backround service
-
-        $ mongod --fork --logpath /var/log/mongodb.log
+Run MongoDB as a backround service  
+`mongod --fork --logpath /var/log/mongodb.log`
 
 ### Troubleshooting
 
-- List applications by memory usage
-
-        $ top -o MEM
+List applications by memory usage  
+`top -o MEM`
         
-- List disk I/O and CPU load
-
-        $ iostat
+List disk I/O and CPU load  
+`iostat`
 
 ### Misc
 
-- Run last command as root
+Run last command as root  
+`sudo !!`
 
-        $ sudo !!
+Go to home dir 
+`cd`
 
-- Go to home dir 
-
-        $ cd
-
-- Edit aliases, PATH and other variables
-
-        $ sudo nano .bash_profile
-        $ source .bash_profile
+Edit aliases, PATH and other environment variables  
+`sudo nano .bash_profile`
+`source .bash_profile`
         
-- Set aliases directly from the command line
-
-        $ alias wikisurf="python ~/WikiSurf/WikiSurfPy.py"
+Set aliases directly from the command line  
+`alias wikisurf="python ~/WikiSurf/WikiSurfPy.py"`
 
 
 ### Python
 
-- Open Python script in interactive mode (runs script and stays in the interpreter, preserving namespace)
-
-        $ python -i [filename]
+Open Python script in interactive mode (runs script and stays in the interpreter, preserving namespace)  
+`python -i [filename]`
 
 ## Git (CLI)
 
@@ -87,11 +76,17 @@ shows files changed since last commit & whether they are included in the next co
 `git diff`  
 shows the changes in each file compared to the last commit  
 
+`git diff HEAD^`  
+shows difference between each file and the parent of the last commit (useful to check what you are about to push!)
+
 `git blame <file>`  
 shows who edited each line  
 
 `git show HEAD`  
 shows the last commit (author, date, message, diff)
+
+`git show SHA`  
+shows changes introduced by the commit
 
 ##### Move around
 
@@ -109,13 +104,29 @@ add a file or path to be included in the next commit (wildcards work for paths t
 `git add .` or `git add -A` or `git add --all`  
 add everything  
 
+`git cherry-pick SHA`  
+apply a commit from another branch to the current one
+
 `git reset HEAD <file>`  
 revert changes in a file to last commit
+
+##### Fetching, merging, pulling
+
+`git fetch`  
+get recent changes from remote
+
+`git pull`  
+fetch and merge changes (prone to conflicts!)
+
+`git pull --rebase`
+pull with a rebase to maintain linear history and avoid conflicts
+
 
 ##### Clean up
 
 `git branch -D <branch name>`  
 delete branch
+
 
 ##### Stash (cut & paste)
 
