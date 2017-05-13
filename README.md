@@ -127,6 +127,9 @@ pull with a rebase to maintain linear history and avoid conflicts
 `git branch -D <branch name>`  
 delete branch
 
+`git add -u :/`  
+remove locally deleted files from remote (files that you have already deleted from disk)
+
 
 ##### Stash (cut & paste)
 
