@@ -1,7 +1,7 @@
 # uTIL
 **Micro TILs and utilities for macOS**
 
---- 
+---
 
 ## Terminal commands
 
@@ -9,10 +9,10 @@
 
 Flush DNS  
 `sudo dscacheutil -flushcache`
-        
+
 Edit hosts file (to manually override DNS servers)  
 `sudo nano ./etc/hosts`
-        
+
 Start a simple HTTP server with Python   
 `python -m SimpleHTTPServer`
 
@@ -23,22 +23,25 @@ Run MongoDB as a backround service
 
 List applications by memory usage  
 `top -o MEM`
-        
+
 List disk I/O and CPU load  
 `iostat`
+
+List directories, sorted by size  
+`du -s * | sort -nr`
 
 ### Misc
 
 Run last command as root  
 `sudo !!`
 
-Go to home dir 
+Go to home dir
 `cd`
 
 Edit aliases, PATH and other environment variables  
 `sudo nano .bash_profile`
 `source .bash_profile`
-        
+
 Set aliases directly from the command line  
 `alias wikisurf="python ~/WikiSurf/WikiSurfPy.py"`
 
