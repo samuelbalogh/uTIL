@@ -11,7 +11,7 @@ Flush DNS
 `sudo dscacheutil -flushcache`
 
 Edit hosts file (to manually override DNS servers)  
-`sudo nano ./etc/hosts`
+`sudo vim ./etc/hosts`
 
 Start a simple HTTP server with Python   
 `python -m SimpleHTTPServer`
@@ -39,7 +39,7 @@ Go to home dir
 `cd`
 
 Edit aliases, PATH and other environment variables  
-`sudo nano .bash_profile`
+`sudo vim .bash_profile`
 `source .bash_profile`
 
 Set aliases directly from the command line  
@@ -122,7 +122,7 @@ get recent changes from remote
 fetch and merge changes (prone to conflicts!)
 
 `git pull --rebase`
-pull with a rebase to maintain linear history and avoid conflicts
+pull with a rebase to maintain linear history and (ideally) avoid conflicts
 
 
 ##### Clean up
@@ -131,7 +131,7 @@ pull with a rebase to maintain linear history and avoid conflicts
 delete branch
 
 `git add -u :/`  
-remove locally deleted files from remote (files that you have already deleted from disk)
+remove locally deleted files from remote (files that you already deleted from disk)
 
 
 ##### Stash (cut & paste)
