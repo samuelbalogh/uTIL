@@ -191,6 +191,9 @@ empty the stash
 
 4. Copy the all of the contents of the public key, go to [Github > Settings > SSH and GPG keys](https://github.com/settings/keys), click 'New SSH key' and paste the contents of the public key.
 
+To generate multiple keys with different names:  
+`ssh-keygen -t rsa -f /path/to/key`
+
 ## Etc
 ### Show hidden files in macOS Finder
 press `cmd`+`shift`+`.`
