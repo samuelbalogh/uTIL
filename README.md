@@ -99,6 +99,9 @@ move to another branch
 `git checkout -b <branch>`  
 move to another branch, and if it doesn't exist, create a new one
 
+`git checkout <commit hash>` 
+check out a snapshot corresponding to a specific commit. This creates a detached head (not referring to any branch).
+
 ##### Add things
 
 `git add <file or path>`  
@@ -121,9 +124,8 @@ get recent changes from remote
 `git pull`  
 fetch and merge changes (prone to conflicts!)
 
-`git pull --rebase`
-pull with a rebase to maintain linear history and (ideally) avoid conflicts
-
+`git pull --rebase`  
+Rebase the current branch on top of the upstream branch after fetching. Useful if working with a master-only workflow and you want to maintaing linear history.
 
 ##### Clean up
 
