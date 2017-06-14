@@ -88,8 +88,13 @@ shows who edited each line
 `git show HEAD`  
 shows the last commit (author, date, message, diff)
 
-`git show SHA`  
+`git show <commit-sha>`  
 shows changes introduced by the commit
+
+`git show --no-prefix -U1000 <commit-sha>`  
+shows changes introduced by the commit, with full context
+
+
 
 ##### Move around
 
