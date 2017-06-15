@@ -39,7 +39,7 @@ Go to home dir
 `cd`
 
 Edit aliases, PATH and other environment variables  
-`sudo vim .bash_profile`
+`sudo vim .bash_profile`  
 `source .bash_profile`
 
 Set aliases directly from the command line  
