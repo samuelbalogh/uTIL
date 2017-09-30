@@ -51,6 +51,11 @@ Set aliases directly from the command line
 Open Python script in interactive mode (runs script and stays in the interpreter, preserving namespace)  
 `python -i [filename]`
 
+Create a virtual environment and activate it  
+`python -m venv path/to/venv`  
+`source path/to/venv/activate`  
+
+
 ## Git (CLI)
 
 #### Workflow
