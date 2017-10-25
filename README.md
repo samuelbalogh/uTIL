@@ -55,7 +55,7 @@ Create a virtual environment and activate it
 `python -m venv path/to/venv`  
 `source path/to/venv/activate`  
 
-If the above command fails with something like  ` '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1`  : 
+If the above command fails with something like  ` '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1`, try the following :   
 `python -m venv --without-pip path/to/venv`    
 `source path/to/venv/bin/activate`  
 `curl https://bootstrap.pypa.io/get-pip.py | python`  
