@@ -62,6 +62,8 @@ If the above command fails with something like  ` '-Im', 'ensurepip', '--upgrade
 `deactivate`  
 `source path/to/venv/bin/activate`  
 
+Shebang line for Python 3  
+`#!/usr/bin/env python3`
 
 ## Git (CLI)
 
