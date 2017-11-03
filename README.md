@@ -215,6 +215,13 @@ empty the stash
 To generate multiple keys with different names:  
 `ssh-keygen -t rsa -f /path/to/key`
 
+## Image manipulation with Imagemagick
+
+#### How to create a favicon.ico
+
+        $ brew install imagemagick
+        $ magick input.png -resize 32x32 favicon.ico
+        
 ## Etc
 ### Show hidden files in macOS Finder
 press `cmd`+`shift`+`.`
