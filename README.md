@@ -19,6 +19,9 @@ Start a simple HTTP server with Python
 Run MongoDB as a backround service  
 `mongod --fork --logpath /var/log/mongodb.log`
 
+See which process is using a specific port
+`lsof -i tcp:[port nr.]`
+
 ### Troubleshooting
 
 List applications by memory usage  
@@ -118,7 +121,7 @@ move to another branch
 `git checkout -b <branch>`  
 move to another branch, and if it doesn't exist, create a new one
 
-`git checkout <commit hash>` 
+`git checkout <commit hash>`
 check out a snapshot corresponding to a specific commit. This creates a detached head (not referring to any branch).
 
 ##### Add things
