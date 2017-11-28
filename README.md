@@ -19,7 +19,7 @@ Start a simple HTTP server with Python
 Run MongoDB as a backround service  
 `mongod --fork --logpath /var/log/mongodb.log`
 
-See which process is using a specific port
+See which process is using a specific port  
 `lsof -i tcp:[port nr.]`
 
 ### Troubleshooting
@@ -224,7 +224,7 @@ To generate multiple keys with different names:
 
         $ brew install imagemagick
         $ magick input.png -resize 32x32 favicon.ico
-        
+
 ## Etc
 ### Show hidden files in macOS Finder
 press `cmd`+`shift`+`.`
