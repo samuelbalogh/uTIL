@@ -48,6 +48,9 @@ Edit aliases, PATH and other environment variables
 Set aliases directly from the command line  
 `alias wikisurf="python ~/WikiSurf/WikiSurfPy.py"`
 
+Show size of directory (including subdirs and files)  
+`du -sh [path/to/dir]`
+
 
 ### Python
 
