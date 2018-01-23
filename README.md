@@ -65,6 +65,9 @@ Show size of directory (including subdirs and files)
 Open Python script in interactive mode (runs script and stays in the interpreter, preserving namespace)  
 `python -i [filename]`
 
+Use the Python Debugger to interactively debug your code:  
+`python -m pdb script.py`
+
 Create a virtual environment and activate it  
 `python -m venv path/to/venv`  
 `source path/to/venv/activate`  
