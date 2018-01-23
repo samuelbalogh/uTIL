@@ -50,8 +50,8 @@ gr () {
 ```
 
 Edit aliases, PATH and other environment variables  
-`sudo vim .bash_profile`  
-`source .bash_profile`
+`sudo vim ~/.bash_profile`  
+`source ~/.bash_profile`  
 
 Set aliases directly from the command line  
 `alias wikisurf="python ~/WikiSurf/WikiSurfPy.py"`
