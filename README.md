@@ -41,7 +41,8 @@ Run last command as root
 Go to home dir
 `cd`
 
-Function that looks for a specific string in the current directory, listing its occurences with 5 lines of context before and after it, and highlights the search term.    
+Function that looks for a specific string in the current directory, listing its occurences with 5 lines of context before and after it, and highlights the search term. 
+You can put this into your `bash_rc` or `bash_profile` for the magic. 
 ```
 gr () {
     grep -F -r -A 5 -B 5 "$1" . --color=auto
