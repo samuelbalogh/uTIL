@@ -155,7 +155,7 @@ revert changes in a file to last commit
 `git commit --amend`   
 add some more changes to the previous commit
 
-`git reset --soft HEAD@{1}` . 
+`git reset --soft HEAD@{1}`   
 undo erroneously amended commit
 
 
