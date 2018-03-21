@@ -152,6 +152,13 @@ apply a commit from another branch to the current one
 `git reset HEAD <file>`  
 revert changes in a file to last commit
 
+`git commit --amend`   
+add some more changes to the previous commit
+
+`git reset --soft HEAD@{1}` . 
+undo erroneously amended commit
+
+
 ##### Fetching, merging, pulling
 
 `git fetch`  
