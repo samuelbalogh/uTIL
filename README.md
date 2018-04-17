@@ -59,6 +59,8 @@ Set aliases directly from the command line
 Show size of directory (including subdirs and files)  
 `du -sh [path/to/dir]`
 
+Find occurences of a word in files matching a regex pattern. Uses **ack**.  
+`find adir -regex ".*pattern_here.*.py" | ack --files-from=- search_term_here` . 
 
 ### Python
 
