@@ -84,6 +84,16 @@ If the above command fails with something like  ` '-Im', 'ensurepip', '--upgrade
 Shebang line for Python 3  
 `#!/usr/bin/env python3`
 
+#### Python debugger commands  
+`import pdb; pdb.set_trace()` to a part of your code you want to inspect
+
+`sticky` to see the code context around the breakpoint
+
+`n` for executing next line
+
+`pp <expression>` to pretty-print a variable (for instance, `pp vars(an_object)` can be very handy)
+
+
 ## Git (CLI)
 
 #### Workflow
