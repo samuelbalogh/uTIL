@@ -127,6 +127,11 @@ shows changes introduced by the commit
 `git show --no-prefix -U1000 <commit-sha>`  
 shows changes introduced by the commit, with full context
 
+`git log -S <string> path/to/file`  
+Git blame for a deleted line
+
+`git log --follow path/to/file`   
+Git log but only for that file.
 
 
 ##### Move around
