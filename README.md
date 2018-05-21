@@ -204,6 +204,9 @@ remove locally deleted files from remote (files that you already deleted from di
 `git stash`  
 remove all changes since last commit & put them on a clipboard (useful e.g. if you want to merge master before a PR)  
 
+`git stash -k`  
+stash but only the unstaged changes (i.e. those which were not `git add`-ed)  
+
 `git stash show -p`  
 view the contents of the stash (looks like a git diff)  
 
