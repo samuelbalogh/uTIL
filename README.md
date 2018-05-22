@@ -131,7 +131,7 @@ shows the changes in each file compared to the last commit
 `git diff HEAD^`  
 shows difference between each file and the parent of the last commit (useful to check what you are about to push!)
 
-`git diff <SHA1> <SHA2> --name-only` or `git diff <branch1> <branch2> --name-only` 
+`git diff <SHA1> <SHA2> --name-only` or `git diff <branch1> <branch2> --name-only`  
 shows names of files that differ in those commits/branches
 
 `git blame <file>`  
