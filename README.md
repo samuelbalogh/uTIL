@@ -119,6 +119,9 @@ shows existing branches & which branch we are working on
 `git branch -a`  
 shows remote branches too  
 
+`git branch --sort=committerdate`  
+shows your local branches sorted by their last commit date (find your recent branches this way)
+
 `git s` or `git status`  
 shows files changed since last commit & whether they are included in the next commit  
 
@@ -127,6 +130,9 @@ shows the changes in each file compared to the last commit
 
 `git diff HEAD^`  
 shows difference between each file and the parent of the last commit (useful to check what you are about to push!)
+
+`git diff <SHA1> <SHA2> --name-only` or `git diff <branch1> <branch2> --name-only` 
+shows names of files that differ in those commits/branches
 
 `git blame <file>`  
 shows who edited each line  
