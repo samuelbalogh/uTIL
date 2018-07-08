@@ -65,6 +65,9 @@ Find occurences of a word in files matching a regex pattern. Uses **ack**.
 Find and replace string in current directory:  
 `find . -type f -print0 | xargs -0 perl -pi -w -e 's/oldstring/newstring/g;'`
 
+In Ubuntu, turn off line wrap with the following command:  `tput rmam`. The output of any command will be chopped off at your  current terminal width.
+Turn it back on with `tput smam`. 
+
 ### Python
 
 Open Python script in interactive mode (runs script and stays in the interpreter, preserving namespace)  
