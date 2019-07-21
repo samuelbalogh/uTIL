@@ -17,7 +17,7 @@ Start a simple HTTP server with Python
 `python -m SimpleHTTPServer`
 
 Run MongoDB as a backround service  
-`mongod --fork --logpath /var/log/mongodb.log`
+`mongod --fork --config /usr/local/etc/mongod.conf`
 
 See which process is using a specific port  
 `lsof -i tcp:[port nr.]`
