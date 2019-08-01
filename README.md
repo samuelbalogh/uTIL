@@ -33,6 +33,15 @@ List disk I/O and CPU load
 List directories, sorted by size  
 `du -s * | sort -nr`
 
+
+### Diff
+
+`vim -d file1 file2`  see diff between two files in Vim
+
+`git diff file1 file2` . use Git for the same thing
+
+`diff file1 file2` . use plain old `diff` for the same thing
+
 ### Misc
 
 Run last command as root  
@@ -98,6 +107,8 @@ Shebang line for Python 3
 `n` for executing next line
 
 `c` for continueing until next breakpoint
+
+`s` for stepping inside function call 
 
 `interact` to interact with the interpreter
 
