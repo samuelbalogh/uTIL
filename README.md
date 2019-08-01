@@ -14,7 +14,7 @@ Edit hosts file (to manually override DNS servers)
 `sudo vim ./etc/hosts`
 
 Start a simple HTTP server with Python   
-`python -m SimpleHTTPServer`
+`python -m http.server` (Python3) or `python -m SimpleHTTPServer` (Python2)
 
 Run MongoDB as a backround service  
 `mongod --fork --config /usr/local/etc/mongod.conf`
@@ -91,14 +91,17 @@ Shebang line for Python 3
 `#!/usr/bin/env python3`
 
 #### Python debugger commands  
-`import pdb; pdb.set_trace()` to a part of your code you want to inspect
+`import pdb; pdb.set_trace()` or `breakpoint()` (Python 3.6+) to a part of your code you want to inspect 
 
 `sticky` to see the code context around the breakpoint
 
 `n` for executing next line
 
-`pp <expression>` to pretty-print a variable (for instance, `pp vars(an_object)` can be very handy)
+`c` for continueing until next breakpoint
 
+`interact` to interact with the interpreter
+
+`pp <expression>` to pretty-print a variable (for instance, `pp vars(an_object)` or `pp an_object.__dict__` can be very handy)
 
 ## Git (CLI)
 
